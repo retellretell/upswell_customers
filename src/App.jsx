@@ -26,7 +26,7 @@ const BRAND = {
   cardBg: "#FFFFFF",      // Card surface
 };
 
-const UPSWELL_LOGO = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCACWAJYDASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAAAAIGBwgBAwQF/8QAShAAAQMCAwMGCQcIBgMBAAABAAIDBBEFBhITITFBBxQiMkJRYQgVIzNSYnGBkRYkQ3KhscEXNFNjkpOiFkRzwuEJJUSDstHx/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAEEAgMFBgf/xAAvEQABAwIEBAQGAwEAAAAAAAABAAIDBBEFEiExBhNBUSJhkaEUMnGBwfAjQtEz/9oADAMBAAIRAxEAPwCpCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSU+8iXIw7MFe3MOOxOjwWB+5h3tdUW6ug9nX1DVAWT8DVuLZipcHw+Hn1RK67geGxi/Tbp7unqV7Mj5Ly1k6mZV5mzFR4ZBHH7KKlnEkz+oevuXnq3EGUjNDN3erxwy3p56Ej3OPIeAqBIQhELqIQhCSSEIQkkhCEJJIQhCSSEIQkkhCEJJIQhCSS0SytjjdI82a1pJPgAvsMo4lV1kcZoJopHmzWyRloJ9pUV8v2ZHYFyb4lLE7TUVkRo6bl9u7Z/ob1qleI4mx9Fx4U5YNfOY+HxaaNvVxsFWrOPLtmvOMzjiON1BjJuKamcY42+G7f8XuqVrqQvgE6nh67EzJGy1gEJKLlVeduUxzJVtfFl6r2HVFTSm/V9u7d4eKnvk15BGY/WVWasRpSyPGN1EWZj3kZIv1eC+w5HMoSZ4zhHRRNLqCCRslY8XsGDizp8V9dlvL+XcqUYo8AwiiwyBu/Z0sQYHfaAufxXk8S4nEc0wZqd64GF8PGN3ia7UhCEKguuhCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSWitqoaKlmq6qQRQQsMkjz6LWi5JK+ewuqjq6SCqiN4po2yNI4tcLg/iVTbltzAcw8pWMVjZdpDDMaSBnGzWbh/y5UneCHmB1Bm+pyxUyWp8Ri1xAnhLEeH9zdfGcTYg+kxiT+zSF7bhbDWw0kb2j+wJ93KfIQhcBd5CEIQkkhCEJJIQhCSSEIQkkhCEJJIQhCSSEIQkkta+e5F80nLfKhguISSlkDakU07zzijdrYT+D7rWv0Kvm+T7nRuVuU/Bsalfspqd22qxf9JGdJJ9e7fyXy2M0Iq6N8R+YWP3K+1OPU+KYP67f2VNPClx04pyhHLdPD5qqucXnvINrd/lqlHlny6c3cneO4IGFzp6R8sI/6mLyi/JoVSPhK4oGYZk2nbq/N8TmZF/Afav/ALVdvHKQV+D1VKf07CG/rcGr5mW4hLPVPmlNy95ufqXSw2ARUjGNG2gQhCwVxCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJCEISSQhCEkl8vyj4EcEzliNBt9o0T9ZgdxdE7e0/tfRoXxK+k5TsEnzJyeY7g1KGmqqaJ00AP6eO0jB/c0L5lfE8Tp/DUNkHe/wBl9AwCo8dE6E/J0/ChCFVXTQhCEJJIQhCSSEIQkkhCEJJIQhCSSEIQkkhCEJJIQhCSSEIQkkufEaGmxKgqKCtiE9NUxuhlYeFjhYj8V0ISBsoXynKBl6fKeecVy/UEk4fVOia88XR30u/Fp+64UtyXcgGEZ0rXYjis00DaeESwRRuGnWd1iST3e5VEz1hmIZUzHX4JirNFVRyEOLeLTzY8e1rhpX0DB8YjxCn1j5x0K+f4hg8mHz5Tdp2KdaEIVlU0IQhJJCEISSQhCEkkIQhJJCEISSQhCEkkIQhJJa5ZGxRukkNmtFyT3Ba1085TcUfhHJ3jFRGbSPh2MXVf2h6P7rKVwYxznDeyrPcyNhkcdh1UK8u+Z/wCUPKnjclC+8NFG6GlHLjdx+Lif4LwPA/zSMHzvV5Rq5bUuMRjaQE8BPH6Pvb6Q+CjNXL+Ctm1+auU/C2TQ6oaKYVkjTwJb6Iv8ri19EpcPipWuAcdVwJsRlq3xu6aD+6lNJCFuvYoaKeeUXjiY6V38rSbr6nkk5a8z5AxKJ+F4lO+ibJ5WiqHmSGQd9jfR94svikJXzWcU1PJVyOklaXyONySV9QwyVk8DJG9HALw2O8OmkxiTl1BXQXH8VpcKopK2vnZT00DN8ksjrNa0cyV83yn8oON8oePyYxjlSZHX0xQg2jhb6LG9H39a76jMWIVFNBSTVUslPTi0MMjyWxjwaPBdWDDZas+I6AKpV4lFRN+HpxmfyXuyZswinyZFmmKqDsLkqhSCrbd2xLm6reW/d3rhzBnjL2A4g2hxauENS6MShu7UC4C1yfJdPKDUtwvkszNUSts1tA9jfafoaG/mQqCSSOlldLIdT3Fx9hJuuq2mjjaGsGgVRtVPM8vkkJJ7q5+TuVLKmaauWkwbE21FRE3XIBI5pDRz0k7rL3FRSm5OpnUfKBlqrhNnR4lTuH4SBfc8hvKW3k/z9SYjUTiPDqzybELncGg72v/ALXbwuF7jRQ+E3Yrj4pDC2pfydgr4IQhXVRQhCEkkIQhJJCEISSQhCEklrqGOfTyMabFzCAfdfhr73kf5TMwcn2Y6fFcDq3sA0ipppHE09Q3m1zRz9R5hfA70IRulg7jT82aSjroJ6CtiE9NUMODQ4cLEXB/C64EOIcU4ZNlvOOK5drrGow+rdA5/KQWOh/wCJu1y/Rzkwz3T8oWSMPzHTtbHJUR2nhb6E7Pa0/v8AgVQ/l/yUcl8rmLYPDCYaJ8gnox/pJBfS3+U2+xeX4cxp1RWmhkNgNcvoup8ThsNLSCujF3HQj0Kf6Eyrph3KxxBjv4eFehXqOR/l5xvk1rDJhszaqgkd5SgqnkwSfTpd4r5pCF0HxtdqCs0ONz0byYjo74rt8r/LtjPKLiElPQ1s2H4AG6YYKaTR0fTPbx8F5PIbmy+TuVDCcfmqjBRU0nkqoHhC+V3otPjr6V5iEKsylbEGZdAFINZUSTA+IklXpwrlAzBheExYXQ4g+Chj9WNgANjfm7mV0sMz7mWnzRFmKPFphirKjnIqL2Gp+7Vr/ysT96hFJCzMEJa3yVcOpI55S92rjupWxfl7zLjWC1GD4hiZmoanSJxoaBYtNxvAvyXzmYcfxTMFbzjFq+euqNoI9tO8uOkbnC/gFxIUiNrdwoxp4YiSxoBI3SEILNZLKF9xyW5DnzhC3F8UYYsCjfs53O4OqXD5re4e84eAuvjMp4O/MMKqoaSMyzwhrxCL3kJJsGt8brj+EHiDKGIYFCAZHxSvIPdcaR/1L27A8OdQ0DWuFnv3/AIKpLiU0YkhpB8x18upSUpZ5Gs60+es/wCe4KmI0dRBjsFJDUSk7ISHZgxjxc7Tp/dcPIByLY/yg1bH0UZo8L3/AJ3VN6MfS3pe4ffdV95OqOoy7j1ZNiLC2qioHmip2G7y2Njbu3E2dYFepwmjfTQATDxHf2VDiKtjq6t3w50G3urN/LnlPMWSMyVGXccjY2emILJoiTHKwkgPaexUZzXm3MOL5txxuLY/iM2JVzcuziqu6zRybYNC0YLBQ0kFHTi0UEYjYOoC3BcaWgjpGljfqV5aqqqKsjdJJ0H6IQhZrWkhCEJJIQhCSS0VMLaiCSB+7Xsc0/cbreklL5TlO/wCkMBv9V3qJ4dPyqxjuyquX1fJ3UNZU8h+WqqRpa+bDmSb+rjcfxC+UQvnuIszK2RvZxC+gYXJ4qON3dp7oQhCqK4hCEJJIQhCSSEIQkkhCEJJIQhCSS10re8fu2rYkjekfJJAWVs9JhnKQMt0zHTt5/RNLT0f4hm5v3kKSvB/y3FlTlJwahkj2kMlV5eUctkw6j/wASqHZkq34hnTGa6M3jqMQqJWH1XSuI/Ar77kXwp2B8mGBYZK3TLFSNklHIyO6Z/4yFdLD4vBRxs8gvO4pN46+V/dx/CkRCEK6uOhCEISSQhCEkkIQhJJCEISSQhCEkl//9k=";
+const UPSWELL_LOGO = "/upswell-logo.png";
 
 // ─── Helpers ───
 async function hashPin(pin) {
@@ -78,20 +78,18 @@ function BrandHeader() {
   return (
     <div style={{
       display: "flex", alignItems: "center", justifyContent: "center",
-      gap: 10, padding: "20px 16px 12px",
+      padding: "24px 16px 12px",
     }}>
-      <img src={UPSWELL_LOGO} alt="Upswell" style={{ width: 32, height: 32, borderRadius: "50%" }} />
-      <span style={{
-        color: BRAND.coral, fontSize: "22px", fontWeight: "700",
-        fontFamily: FONT, letterSpacing: "-0.01em",
-      }}>
-        Upswell
-      </span>
+      <img
+        src={UPSWELL_LOGO}
+        alt="Upswell"
+        style={{ height: 32 }}
+      />
     </div>
   );
 }
 
-function DeleteModal({ deleteConfirmId, onCancel, onConfirm, cardStyle, btnSecondary }) {
+function DeleteModal({ deleteConfirmId, onCancel, onConfirm }) {
   if (deleteConfirmId === null) return null;
   return (
     <div
@@ -105,7 +103,7 @@ function DeleteModal({ deleteConfirmId, onCancel, onConfirm, cardStyle, btnSecon
       onClick={onCancel}
     >
       <div
-        style={{ ...cardStyle, textAlign: "center", padding: "32px 28px", maxWidth: "360px" }}
+        style={{ ...card, textAlign: "center", padding: "32px 28px", maxWidth: "360px" }}
         onClick={(e) => e.stopPropagation()}
       >
         <p style={{ color: BRAND.ink, fontSize: "20px", margin: "0 0 8px", fontWeight: "700" }}>
@@ -140,6 +138,78 @@ function DeleteModal({ deleteConfirmId, onCancel, onConfirm, cardStyle, btnSecon
     </div>
   );
 }
+
+// ═══════════════════════════════════════
+// Styles (module-scope — only depend on BRAND and FONT constants)
+// ═══════════════════════════════════════
+
+const pageBg = {
+  background: BRAND.bg,
+  minHeight: "100vh",
+  fontFamily: FONT,
+  color: BRAND.body,
+};
+
+const card = {
+  background: BRAND.cardBg,
+  border: `1px solid ${BRAND.border}`,
+  borderRadius: "16px",
+  padding: "32px 28px",
+  maxWidth: "440px",
+  width: "100%",
+  margin: "0 auto",
+};
+
+const inputStyle = {
+  width: "100%",
+  padding: "16px 18px",
+  borderRadius: "12px",
+  border: `1.5px solid ${BRAND.border}`,
+  background: BRAND.cardBg,
+  color: BRAND.ink,
+  fontSize: "16px",
+  fontFamily: FONT,
+  fontWeight: "500",
+  outline: "none",
+  boxSizing: "border-box",
+  transition: "border-color 0.15s",
+};
+
+const btnPrimary = {
+  width: "100%",
+  padding: "18px",
+  borderRadius: "999px",
+  border: "none",
+  background: BRAND.coral,
+  color: "#fff",
+  fontSize: "17px",
+  fontWeight: "700",
+  fontFamily: FONT,
+  cursor: "pointer",
+  transition: "background 0.15s, transform 0.1s",
+  letterSpacing: "0.01em",
+};
+
+const btnSecondary = {
+  padding: "10px 18px",
+  borderRadius: "999px",
+  border: `1.5px solid ${BRAND.border}`,
+  background: BRAND.cardBg,
+  color: BRAND.body,
+  fontSize: "13px",
+  fontWeight: "600",
+  fontFamily: FONT,
+  cursor: "pointer",
+  transition: "border-color 0.15s",
+};
+
+const labelStyle = {
+  color: BRAND.body,
+  fontSize: "14px",
+  fontWeight: "600",
+  marginBottom: "8px",
+  display: "block",
+};
 
 export default function App() {
   const [view, setView] = useState("customer");
@@ -348,79 +418,6 @@ export default function App() {
       (c.memo && c.memo.toLowerCase().includes(term))
   );
 
-  // ═══════════════════════════════════════
-  // Styles — Upswell brand
-  // ═══════════════════════════════════════
-  const font = FONT;
-
-  const pageBg = {
-    background: BRAND.bg,
-    minHeight: "100vh",
-    fontFamily: font,
-    color: BRAND.body,
-  };
-
-  const card = {
-    background: BRAND.cardBg,
-    border: `1px solid ${BRAND.border}`,
-    borderRadius: "16px",
-    padding: "32px 28px",
-    maxWidth: "440px",
-    width: "100%",
-    margin: "0 auto",
-  };
-
-  const inputStyle = {
-    width: "100%",
-    padding: "16px 18px",
-    borderRadius: "12px",
-    border: `1.5px solid ${BRAND.border}`,
-    background: BRAND.cardBg,
-    color: BRAND.ink,
-    fontSize: "16px",
-    fontFamily: font,
-    fontWeight: "500",
-    outline: "none",
-    boxSizing: "border-box",
-    transition: "border-color 0.15s",
-  };
-
-  const btnPrimary = {
-    width: "100%",
-    padding: "18px",
-    borderRadius: "999px",
-    border: "none",
-    background: BRAND.coral,
-    color: "#fff",
-    fontSize: "17px",
-    fontWeight: "700",
-    fontFamily: font,
-    cursor: "pointer",
-    transition: "background 0.15s, transform 0.1s",
-    letterSpacing: "0.01em",
-  };
-
-  const btnSecondary = {
-    padding: "10px 18px",
-    borderRadius: "999px",
-    border: `1.5px solid ${BRAND.border}`,
-    background: BRAND.cardBg,
-    color: BRAND.body,
-    fontSize: "13px",
-    fontWeight: "600",
-    fontFamily: font,
-    cursor: "pointer",
-    transition: "border-color 0.15s",
-  };
-
-  const labelStyle = {
-    color: BRAND.body,
-    fontSize: "14px",
-    fontWeight: "600",
-    marginBottom: "8px",
-    display: "block",
-  };
-
   // ─── Customer Form ───
   if (view === "customer") {
     const canSubmit = name.trim() && phone.trim() && !submitting;
@@ -559,7 +556,7 @@ export default function App() {
             style={{
               marginTop: 48, background: "none", border: "none",
               color: BRAND.hint, fontSize: "12px", cursor: "pointer",
-              fontFamily: font, fontWeight: "500",
+              fontFamily: FONT, fontWeight: "500",
             }}
           >
             Admin
@@ -650,8 +647,6 @@ export default function App() {
         deleteConfirmId={deleteConfirmId}
         onCancel={() => setDeleteConfirmId(null)}
         onConfirm={adminAction(confirmDelete)}
-        cardStyle={card}
-        btnSecondary={btnSecondary}
       />
       <BrandHeader />
       <div style={{ padding: "16px 16px 60px", maxWidth: "720px", margin: "0 auto" }}>
